@@ -30,7 +30,7 @@ public class InsurancePlans {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name="ID")
-	private int id;
+	private Integer id;
 	
 	@Column(name="CUSTOMER_NAME")
 	private String customerName;

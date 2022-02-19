@@ -60,14 +60,15 @@ public class InsurancePlansServiceImpl implements InsurancePlansService {
 			entity.setPlanName(request.getPlanName());
 		if(request!=null && request.getPlansStatus()!=null && !request.getPlansStatus().equals(""))
 			entity.setPlansStatus(request.getPlansStatus());
-		System.out.println("Plan name :"+entity.getPlanName());
-		System.out.println("Plan Status :"+entity.getPlansStatus());
 		
-		Example<InsurancePlans> of=Example.of(entity);
+		//System.out.println("Plan name :"+entity.getPlanName());
+		//System.out.println("Plan Status :"+entity.getPlansStatus());
 		
-		System.out.println(of.toString());
-		//List<InsurancePlans> plansList=insurancePlansRepo.findAll(of);
-		List<InsurancePlans> plansList=insurancePlansRepo.findAll();
+		Example<InsurancePlans> example=Example.of(entity);
+		
+		//System.out.println(example.toString());
+		List<InsurancePlans> plansList=insurancePlansRepo.findAll(example);
+		//List<InsurancePlans> plansList=insurancePlansRepo.findAll();
 		
 		System.out.println("Total Records :"+plansList.size());
 		List<SearchResponce> responceList=new ArrayList<>();
