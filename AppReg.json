@@ -6,3 +6,17 @@
     "ssn" : "664544047879954",
     "dateOfBirth" :"1986-12-05"
 }
+
+{
+    "income" : "200",
+	"kidslowestAge" : "19",
+	"userAge" : "64",
+	"employeementStatus" : "Un-employee"
+}
+
+{
+    "income" : "300",
+	"kidslowestAge" : "16",
+	"userAge" : "64",
+	"employee" : "true"
+}
