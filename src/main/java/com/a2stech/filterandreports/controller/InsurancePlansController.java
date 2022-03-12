@@ -28,7 +28,7 @@ public class InsurancePlansController {
 	@Autowired
 	InsurancePlansService insurancePlansService;
 	
-	@PostMapping("/plans")//I am not inserting any data here why we need to take PostMapping?
+	@PostMapping("/plans")
 	public ResponseEntity<List<SearchResponce>> getAllInsurancePlans(@RequestBody SearchRequest request){
 		List<SearchResponce> planNames= insurancePlansService.filterInsurancePlans(request);
 		return new ResponseEntity<>(planNames,HttpStatus.OK);

@@ -1,11 +1,8 @@
 package com.a2stech.filterandreports.repository;
 
-import java.io.Serializable;
 import java.util.List;
-
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-
 import com.a2stech.filterandreports.entities.InsurancePlans;
 
 public interface InsurancePlansRepo extends JpaRepository<InsurancePlans, Integer>{
@@ -15,5 +12,4 @@ public interface InsurancePlansRepo extends JpaRepository<InsurancePlans, Intege
 	
 	@Query("select distinct plansStatus from InsurancePlans")
 	List<String> getUniquePlanStatus();
-
 }

@@ -1,9 +1,10 @@
 package com.a2stech.filterandreports.service;
 
 import com.a2stech.filterandreports.model.EligibilityDeterminationRuleForm;
+import com.a2stech.filterandreports.model.PlanInfo;
 
 public interface EligibilityDeterminationRuleService {
 
-	String getPlanNameByCitizenData(EligibilityDeterminationRuleForm edRuleForm);
+	PlanInfo getPlanInfoByUsingCitizenData(EligibilityDeterminationRuleForm edRuleForm);
 
 }

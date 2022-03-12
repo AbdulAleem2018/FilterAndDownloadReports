@@ -8,15 +8,11 @@
 }
 
 {
+    "ssn" : "53487534857",
+    "userName" : "Abdul Aleem",
     "income" : "200",
-	"kidslowestAge" : "19",
-	"userAge" : "64",
-	"employeementStatus" : "Un-employee"
-}
-
-{
-    "income" : "300",
 	"kidslowestAge" : "16",
 	"userAge" : "64",
-	"employee" : "true"
+	"employee" : "true",
+    "applyToPlanname" : "SNAP"
 }
